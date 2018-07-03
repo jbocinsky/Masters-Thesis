@@ -7,8 +7,6 @@ What is the goal of land mine detection?
 
 \subsection{Data Collection 1}
 Explain where and when the data was collected...\newline
-Explain what a sweep is and the different variations of sweeps...\newline
-Show what each variation looks like plotted out over UTM coordinates
 
 \subsubsection{Sensors Used}
 Explain the types of hand held sensors that were used to collect data
@@ -19,7 +17,9 @@ High Metal vs Low Metal
 
 \subsubsection{Data Format}
 Explain what a lane is...\newline
-Explain what a grid is...
+Explain what a grid is...\newline
+Explain what a sweep is and the different variations of sweeps...\newline
+Show what each sweep variation looks like plotted over UTM coordinates
 
 
 
@@ -30,18 +30,28 @@ Explain what a grid is...
 Answer the following: Using a clustering initialization approach to the multi-target MIACE algorithm, which of these three clustering methods (clustering1, clustering2, and clustering3) performs the best, considering ability and efficiency?
 
 \subsubsection{Ability}
-
+Cluster Validity\newline
+Confusion Matrix\newline
+ROC curves on individual target types\newline
+ROC curves on high metal \newline
+ROC curves on low metal\newline
+ROC curves on all metal
 
 \subsubsection{Efficiency}
 Run Time Comparison \newline
 Space Comparison \newline
 Data Awareness Comparison - How much prior knowledge about the data is required before running an algorithm\newline
+
 
 
 \subsection{Experiment 2: Multi-Target MIACE Comparison}
 Answer the following: Between the 3 variations of the multi-target MIACE algorithm: greedy approach, thresholding approach, and clustering approach, is there a variation that is able to choose the underlying EMI target signatures? If so, which method performs the best considering ability and efficiency?
 
 \subsubsection{Ability}
+ROC curves on individual target types\newline
+ROC curves on high metal \newline
+ROC curves on low metal\newline
+ROC curves on all metal
 
 \subsubsection{Efficiency}
 Run Time Comparison \newline
@@ -49,10 +59,15 @@ Space Comparison \newline
 Data Awareness Comparison - How much prior knowledge about the data is required before running an algorithm\newline
 
 
+
 \subsection{Experiment 3: Related Methods Comparison}
 Answer the following: Are any of the three types of multi-target MIACE algorithms better, considering ability and efficiency, than a single MIACE algorithm on individual target type classes and/or Global ACE using a generated Discrete Spectrum of Relaxation Frequencies (DSRF)?
 
 \subsubsection{Ability}
+ROC curves on individual target types\newline
+ROC curves on high metal \newline
+ROC curves on low metal\newline
+ROC curves on all metal
 
 \subsubsection{Efficiency}
 Run Time Comparison \newline
