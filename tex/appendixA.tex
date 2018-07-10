@@ -4,3 +4,32 @@
 \chapter{THIS IS THE FIRST APPENDIX}
 
 Appendix information goes here...
+
+Misc Equations and Latex:\newline
+\vspace{5mm}
+
+\textup{Multi Target MIACE Objective function:}
+
+$\underset{\mathbf{S}}{\max} \quad \frac{1}{N^{+}} \sum_{j:L_{j} = 1} \underset{\hat{\hat{s_{k}}}\in \mathbf{S}}\max (\hat{\hat{s}}_{k}^{T} \hat{\hat{x}}_{j,k}^{*}) - \frac{1}{N^{-}} \sum_{j:L_{j} = 0} \frac{1}{N_{j}^{-}} \sum_{x_{i} \in B_{j}^{-}} \underset{\hat{\hat{s_{k}}}\in \mathbf{S}}\max (\hat{\hat{s}}_{k}^{T} \hat{\hat{x}}_{i})$
+
+\vspace{5mm}
+
+$\mathbf{where:}$
+
+$\textup{\textbf{S} is a dictionary of target signatures}$
+
+$\mathbf{S} = 
+\begin{bmatrix}
+\hat{\hat{s}}_{1} && \hat{\hat{s}}_{2} && ... && \hat{\hat{s}}_{k}
+\end{bmatrix}$
+
+$\hat{\hat{x}}_{j,k}^{*} = \arg \underset{x_{i} \in B_{j}^{+}}{\max} (\hat{\hat{s}}_{k}^{T} \hat{\hat{x}}_{i})
+$
+
+\vspace{5mm}
+
+Multi Target MIACE update equation for target $\hat{\hat{s}}_{k}$
+
+
+$$\hat{\hat{s}}_{k} = \frac{t}{\left \| t \right \|} \textup{ where } t = \frac{1}{N^{+}} \sum_{j:L_{j} = 1} \hat{\hat{x}}_{j,k}^{*} - \frac{1}{N^{-}} \sum_{j:L_{j} = 0} \frac{1}{N_{j}^{-}} \sum_{x_{i} \in B_{j}^{-}} \hat{\hat{x}}_{i}$$
+
